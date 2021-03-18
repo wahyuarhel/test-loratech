@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Mulish&family=Noto+Sans+JP&family=Open+Sans&display=swap");
 
 * {
   margin: 0;
@@ -6,6 +6,8 @@
   box-sizing: border-box;
 }
 
-/* body {
+body {
   background: #191f28;
-} */
+  color: white;
+  font-family: "Open Sans";
+}
