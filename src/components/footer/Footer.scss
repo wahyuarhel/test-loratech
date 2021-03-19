@@ -31,13 +31,27 @@
   > :nth-child(1) {
     width: 50%;
   }
-  span {
-  }
   p {
     padding: 2rem 0;
     font-size: 13px;
     font-weight: bold;
     color: #6b7684;
+  }
+}
+
+.footer_list {
+  ul {
+    display: flex;
+    padding: 0 0 2rem 0;
+    li {
+      padding: 0 2rem 0 0;
+      list-style: none;
+      color: #6b7684;
+      font-size: 13px;
+    }
+    > :nth-child(4) {
+      color: #b0b8c1;
+    }
   }
 }
 

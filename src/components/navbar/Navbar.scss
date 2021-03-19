@@ -34,8 +34,10 @@ $darkgrey: #333d4b;
     > :nth-child(2) {
       width: 60%;
       display: flex;
+      justify-content: flex-end;
+      align-items: center;
       div {
-        padding: 0.5rem 1rem 1rem 1rem;
+        padding: 1rem 1rem 1rem 1rem;
         a {
           color: white;
           text-decoration: none;
