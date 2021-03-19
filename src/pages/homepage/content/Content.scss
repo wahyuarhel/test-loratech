@@ -1,0 +1,120 @@
+$container: 1100px;
+$bgcolor: #191f28;
+$blue: rgb(43, 155, 235);
+$green: rgb(0, 170, 170);
+$grey: rgb(62, 86, 108);
+$brown: rgb(86, 85, 87);
+$darkgrey: #333d4b;
+
+.content_container {
+  padding: 30px 0 80px 30px;
+  position: relative;
+}
+
+.card_container {
+  display: flex;
+  position: absolute;
+  > div {
+    padding: 30px 0 30px 30px;
+  }
+  ul {
+    // gap: 20px;
+    li {
+      list-style: none;
+    }
+  }
+}
+
+.blue_card {
+  background-color: $blue;
+  padding: 16px 20px;
+  margin: 0 0 1.5rem 0;
+  width: 13.5rem;
+  border-radius: 8px;
+  > div {
+    display: flex;
+    align-items: center;
+  }
+  img {
+    width: 24px;
+    display: flex;
+  }
+  label {
+    opacity: 0.5;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 0 0 0 0.5rem;
+  }
+  p {
+    padding: 0.5rem 0 0 0;
+  }
+}
+.green_card {
+  background-color: $green;
+  padding: 16px 20px;
+  margin: 0 0 1.5rem 0;
+  width: 13.5rem;
+  border-radius: 8px;
+  > div {
+    display: flex;
+  }
+  img {
+    width: 24px;
+    align-items: center;
+  }
+  label {
+    opacity: 0.5;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 0 0 0 0.5rem;
+  }
+  p {
+    padding: 0.5rem 0 0 0;
+  }
+}
+.grey_card {
+  background-color: $grey;
+  padding: 16px 20px;
+  margin: 0 0 1.5rem 0;
+  width: 13.5rem;
+  border-radius: 8px;
+  > div {
+    display: flex;
+  }
+  img {
+    width: 24px;
+    align-items: center;
+  }
+  label {
+    opacity: 0.5;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 0 0 0 0.5rem;
+  }
+  p {
+    padding: 0.5rem 0 0 0;
+  }
+}
+.brown_card {
+  background-color: $brown;
+  padding: 16px 20px;
+  margin: 0 0 1.5rem 0;
+  width: 13.5rem;
+  border-radius: 8px;
+  > div {
+    display: flex;
+    align-items: center;
+  }
+  img {
+    width: 24px;
+  }
+  label {
+    opacity: 0.5;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 0 0 0 0.5rem;
+  }
+  p {
+    padding: 0.5rem 0 0 0;
+  }
+}

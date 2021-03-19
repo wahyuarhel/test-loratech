@@ -12,6 +12,7 @@ $darkgrey: #333d4b;
   background-color: $bgcolor;
   position: fixed;
   top: 0;
+  z-index: 100;
   .navbar_container {
     width: $container;
     height: 100%;
