@@ -13,6 +13,11 @@ $darkgrey: #333d4b;
   position: fixed;
   top: 0;
   z-index: 100;
+  transition-timing-function: ease-in;
+
+  &.active {
+    box-shadow: 0 35px 35px 10px RGBA(25, 31, 40, 1);
+  }
   .navbar_container {
     width: $container;
     height: 100%;
@@ -39,13 +44,13 @@ $darkgrey: #333d4b;
       align-items: center;
       div {
         padding: 1rem 1rem 1rem 1rem;
-        a {
-          color: white;
-          text-decoration: none;
-          font-family: "Open Sans";
-          font-weight: bold;
-          font-size: 14px;
-        }
+      }
+      a {
+        color: white;
+        text-decoration: none;
+        font-family: "Open Sans";
+        font-weight: bold;
+        font-size: 14px;
       }
     }
   }
