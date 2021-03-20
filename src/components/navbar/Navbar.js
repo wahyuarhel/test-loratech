@@ -25,10 +25,10 @@ export default function Navbar() {
                     <Link to='/menu_2'>
                         <div>TOP 20</div>
                     </Link>
-                    <Link>
+                    <Link to='/menu_3'>
                         <div>실제 개선 사례</div>
                     </Link>
-                    <Link>
+                    <Link to='/menu_4'>
                         <div>캠페인 자세히 보기</div>
                     </Link>
                 </div>

@@ -1,0 +1,48 @@
+$container: 1100px;
+$bgcolor: #191f28;
+$blue: rgb(43, 155, 235);
+$green: rgb(0, 170, 170);
+$grey: rgb(62, 86, 108);
+$brown: rgb(86, 85, 87);
+$darkgrey: #333d4b;
+
+.menu_3_container {
+  width: $container;
+  margin: auto;
+  padding: 58px 50px 0 30px;
+  display: flex;
+  .sidebar_menu_3 {
+    width: 370px;
+    padding: 60px 0 80px 0;
+    margin: 0 15px 0 0;
+    h1 {
+      font-size: 42px;
+      padding: 0 0 1rem 0;
+    }
+    > p {
+      font-size: 17px;
+      color: #d1d6db;
+      margin: 0 0 1.5rem 0;
+    }
+    .card_1 {
+      padding: 20px 23px 19px 35px;
+      background-color: rgb(51, 61, 75);
+      border-radius: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 0 1rem 0;
+      p {
+        font-size: 19px;
+        font-weight: bold;
+      }
+      img {
+        width: 52px;
+      }
+    }
+  }
+  .content_menu_3 {
+    width: 635px;
+    padding: 60px 0 80px 60px;
+  }
+}
