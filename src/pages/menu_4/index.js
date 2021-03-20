@@ -8,8 +8,9 @@ export default function Menu_4() {
                 <h1>
                     146일 동안
                     <br />
-                    7,765개의 불편함이
-                    <br />
+                    <h1 style={{ padding: '0' }} className='rubberBand '>
+                        7,765개의 불편함이
+                    </h1>
                     모였습니다
                 </h1>
                 <p style={{ fontSize: "20px", fontWeight: 'bold' }}>
