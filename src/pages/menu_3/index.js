@@ -41,7 +41,45 @@ export default function Menu_3() {
 
             </div>
             <div className="content_menu_3">
-                <h3>test</h3>
+                <div className='card_menu_3' style={{ background: 'rgb(36, 61, 91)' }}>
+                    <div className='card_menu_3_text'>
+                        <div>
+                            <img src="https://static.toss.im/assets/homepage/moments/icon-quotation.svg" alt="quote" style={{ marginBottom: '1rem' }} />
+                            <h3>밤에 송금하면 점검 <br /> 시간에 꼭 걸려요</h3>
+                        </div>
+                        <div>
+                            <button>자세히 보기</button>
+                        </div>
+                    </div>
+                    <img className='phone_position' src="https://static.toss.im/assets/homepage/moments/ex6.png" alt="phone" />
+                </div>
+
+                <div className='card_menu_3' style={{ background: 'rgb(74, 71, 77)' }}>
+                    <div className='card_menu_3_text'>
+                        <div>
+                            <img src="https://static.toss.im/assets/homepage/moments/icon-quotation.svg" alt="quote" style={{ marginBottom: '1rem' }} />
+                            <h3>보이스피싱 때문에 <br /> 200만원 날린 적 <br /> 있어요</h3>
+                        </div>
+                        <div>
+                            <button>자세히 보기</button>
+                        </div>
+                    </div>
+                    <img className='phone_position' src="https://static.toss.im/assets/homepage/moments/ex7.png" alt="phone" />
+                </div>
+
+                <div className='card_menu_3' style={{ background: 'rgb(10, 82, 65)' }}>
+                    <div className='card_menu_3_text'>
+                        <div>
+                            <img src="https://static.toss.im/assets/homepage/moments/icon-quotation.svg" alt="quote" style={{ marginBottom: '1rem' }} />
+                            <h3>대출 금리 낮출 수 <br /> 있는 상황, 왜 은행은 <br /> 안 알려줄까요?</h3>
+                        </div>
+                        <div>
+                            <button>자세히 보기</button>
+                        </div>
+                    </div>
+                    <img className='phone_position' src="https://static.toss.im/assets/homepage/moments/ex1.png" alt="phone" />
+                </div>
+
             </div>
         </div>
     )

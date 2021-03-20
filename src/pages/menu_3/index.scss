@@ -43,6 +43,52 @@ $darkgrey: #333d4b;
   }
   .content_menu_3 {
     width: 635px;
-    padding: 60px 0 80px 60px;
+    padding: 60px 30px 80px 60px;
+    .card_menu_3 {
+      padding: 32px 32px 26px 32px;
+      border-radius: 15px;
+      margin: 0 0 1.5rem 0;
+      position: relative;
+      animation-name: fadeInUp;
+      animation-duration: 1s;
+      animation-fill-mode: both;
+      @keyframes fadeInUp {
+        0% {
+          opacity: 0;
+          transform: translate3d(0, 100%, 0);
+        }
+        100% {
+          opacity: 1;
+          transform: none;
+        }
+      }
+
+      .phone_position {
+        width: 15rem;
+        position: absolute;
+        top: 0.7rem;
+        right: 0;
+        z-index: 0;
+      }
+      .card_menu_3_text {
+        height: 245px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        button {
+          background: rgba(25, 31, 40, 0.4);
+          border-radius: 8px;
+          border: none;
+          padding: 10px 8px;
+          font-size: 14px;
+          font-weight: bold;
+          color: white;
+        }
+        h3 {
+          font-size: 26px;
+        }
+      }
+    }
   }
 }
