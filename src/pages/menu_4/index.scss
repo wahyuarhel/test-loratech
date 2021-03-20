@@ -28,5 +28,18 @@ $darkgrey: #333d4b;
     a {
       color: #3182f6;
     }
+    h4 {
+      padding: 0 0 1rem 0;
+      font-size: 15px;
+      color: rgb(209, 214, 219);
+    }
+    ul {
+      padding: 0 0 3rem 1.2rem;
+      li {
+        font-size: 13px;
+        padding: 0 0 0.5rem 0;
+        color: rgb(139, 149, 161);
+      }
+    }
   }
 }
