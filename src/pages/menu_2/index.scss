@@ -46,6 +46,20 @@ $darkgrey: #333d4b;
   border-radius: 15px;
   display: flex;
   align-items: flex-start;
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
   p {
     font-weight: bold;
   }

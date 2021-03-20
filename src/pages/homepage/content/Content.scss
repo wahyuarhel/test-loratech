@@ -31,6 +31,19 @@ $darkgrey: #333d4b;
   margin: 0 0 1.5rem 0;
   width: 13.5rem;
   border-radius: 8px;
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
   > div {
     display: flex;
     align-items: center;
@@ -55,6 +68,20 @@ $darkgrey: #333d4b;
   margin: 0 0 1.5rem 0;
   width: 13.5rem;
   border-radius: 8px;
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
   > div {
     display: flex;
   }
@@ -78,6 +105,20 @@ $darkgrey: #333d4b;
   margin: 0 0 1.5rem 0;
   width: 13.5rem;
   border-radius: 8px;
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
   > div {
     display: flex;
   }
@@ -101,6 +142,20 @@ $darkgrey: #333d4b;
   margin: 0 0 1.5rem 0;
   width: 13.5rem;
   border-radius: 8px;
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
   > div {
     display: flex;
     align-items: center;
