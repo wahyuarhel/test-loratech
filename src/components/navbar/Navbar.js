@@ -7,15 +7,14 @@ export default function Navbar() {
 
     const [scroll, setScroll] = useState(false)
     const shadowEffect = () => {
-        (window.scrollY > 5) ? setScroll(true) : setScroll(false)
+        (window.scrollY > 50) ? setScroll(true) : setScroll(false)
     }
 
     window.addEventListener('scroll', shadowEffect)
 
     const scrollToTop = () => {
         window.scrollTo({
-            top: 0,
-            behavior: "smooth"
+            top: 0
         })
     }
     return (
