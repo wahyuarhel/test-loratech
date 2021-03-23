@@ -1,0 +1,19 @@
+@mixin NavbarIpad {
+  @media screen and (max-width: 768px) {
+    .navbar {
+      width: 768px;
+      border: solid 1px white;
+    }
+    .navbar_container {
+      ul {
+        li {
+          //   float: left;
+          //   display: block;
+          a {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

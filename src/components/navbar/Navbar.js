@@ -1,4 +1,6 @@
 import React from 'react'
+import '@fortawesome/fontawesome-free'
+import { FaBars } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import './Navbar.scss'
 import { useState } from 'react'
@@ -20,7 +22,33 @@ export default function Navbar() {
     return (
         <div className={scroll ? 'navbar active' : 'navbar'}>
             <div className="navbar_container">
-                <div>
+                <Link to="/" onClick={scrollToTop}>
+                    <img src="https://static.toss.im/icons/svg/logo-every-moment-white.svg" alt="" />
+                </Link>
+                <button><FaBars /></button>
+
+                <ul>
+                    <li>
+                        <Link to='/' onClick={scrollToTop}>의견 남기기
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to='/menu_2' onClick={scrollToTop}>
+                            TOP 20
+                    </Link>
+                    </li>
+                    <li>
+                        <Link to='/menu_3' onClick={scrollToTop}>
+                            실제 개선 사례
+                    </Link>
+                    </li>
+                    <li>
+                        <Link to='/menu_4' onClick={scrollToTop}>
+                            캠페인 자세히 보기
+                    </Link>
+                    </li>
+                </ul>
+                {/* <div>
                     <Link to="/" onClick={scrollToTop}>
                         <img src="https://static.toss.im/icons/svg/logo-every-moment-white.svg" alt="logo" />
                     </Link>
@@ -39,7 +67,8 @@ export default function Navbar() {
                         <div>캠페인 자세히 보기</div>
                     </Link>
                 </div>
-
+ */}
+                <img src="" alt="" />
             </div>
         </div>
     )

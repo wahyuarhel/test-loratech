@@ -4,46 +4,39 @@ import './Footer.scss'
 export default function Footer() {
     return (
         <div className="footer_container">
-            <div>
-                <div>
-                    <ul>
-                        <p>서비스</p>
-                        <li>공지사항</li>
-                        <li>자주 묻는 질문</li>
-                        <li>공동인증서 관리</li>
-                        <li>계정 일시잠금</li>
-                        <li>고객보호센터</li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <p>회사</p>
-                        <li>회사 소개</li>
-                        <li>토스페이먼츠</li>
-                        <li>토스인슈어런스</li>
-                        <li>채용</li>
-                        <li>블로그</li>
-                        <li>공고</li>
-                    </ul>
+            <div className='service_type'>
+                <ul>
+                    <p>서비스</p>
+                    <li>공지사항</li>
+                    <li>자주 묻는 질문</li>
+                    <li>공동인증서 관리</li>
+                    <li>계정 일시잠금</li>
+                    <li>고객보호센터</li>
+                </ul>
 
-                </div>
-                <div>
-                    <ul>
-                        <p>문의</p>
-                        <li>사업 제휴</li>
-                        <li>인증 사업 문의</li>
-                        <li>마케팅 · PR</li>
-                        <li>IR</li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <p>고객센터</p>
-                        <li>전화: 1599-4905(24시간 연중무휴)</li>
-                        <li>이메일: support@toss.im</li>
-                        <li>카카오톡: @toss</li>
-                    </ul>
-                </div>
+                <ul>
+                    <p>회사</p>
+                    <li>회사 소개</li>
+                    <li>토스페이먼츠</li>
+                    <li>토스인슈어런스</li>
+                    <li>채용</li>
+                    <li>블로그</li>
+                    <li>공고</li>
+                </ul>
+
+                <ul>
+                    <p>문의</p>
+                    <li>사업 제휴</li>
+                    <li>인증 사업 문의</li>
+                    <li>마케팅 · PR</li>
+                    <li>IR</li>
+                </ul>
+                <ul>
+                    <p>고객센터</p>
+                    <li>전화: 1599-4905(24시간 연중무휴)</li>
+                    <li>이메일: support@toss.im</li>
+                    <li>카카오톡: @toss</li>
+                </ul>
             </div>
             <div className="footer_address">
                 <div>

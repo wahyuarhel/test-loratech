@@ -1,27 +1,26 @@
+@import "FooterIpad";
+
 .footer_container {
+  @include FooterIpad();
   width: 1100px;
   margin: auto;
   padding: 58px 50px 3rem 30px;
   min-height: 500px;
-  > :nth-child(1) {
-    display: flex;
-    font-size: 14px;
-    padding: 0 0 3rem 0;
-    > div {
-      padding: 0 4.5rem 0 0;
+}
+.service_type {
+  display: flex;
+  font-size: 14px;
+  margin: 0 0 3rem 0;
+  ul {
+    padding-right: 3rem;
+    p {
+      padding: 0 0 1rem 0;
+      color: #b0b8c1;
     }
-    ul {
-      p {
-        padding: 0 0 1rem 0;
-        color: #b0b8c1;
-        // font-weight: bold;
-      }
-      li {
-        padding: 0 0 0.5rem 0;
-        list-style: none;
-        color: #6b7684;
-        // font-weight: bold;
-      }
+    li {
+      padding: 0 0 0.5rem 0;
+      list-style: none;
+      color: #6b7684;
     }
   }
 }

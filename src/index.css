@@ -11,3 +11,7 @@ body {
   color: white;
   font-family: "Open Sans";
 }
+
+a {
+  text-decoration: none;
+}

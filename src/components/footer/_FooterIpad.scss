@@ -1,0 +1,19 @@
+@mixin FooterIpad {
+  @media screen and (max-width: 768px) {
+    width: 768px;
+    .service_type {
+      display: block;
+      ul {
+        padding-bottom: 2.5em;
+      }
+    }
+    .footer_list {
+      ul {
+        display: inline-block;
+        li {
+          margin-bottom: 0.5em;
+        }
+      }
+    }
+  }
+}

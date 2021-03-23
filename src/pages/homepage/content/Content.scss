@@ -13,6 +13,9 @@ $darkgrey: #333d4b;
   animation-name: fadeInUp;
   animation-duration: 1s;
   animation-fill-mode: both;
+  @media screen and (max-width: 768px) {
+    width: 20em;
+  }
   @keyframes fadeInUp {
     0% {
       opacity: 0;
@@ -44,6 +47,10 @@ $darkgrey: #333d4b;
 
 .content_container {
   padding: 30px 0 80px 30px;
+  @media only screen and (max-width: 768px) {
+    border: 1px solid white;
+    padding-left: 0;
+  }
 
   // height: 100vh;
   // position: relative;
@@ -63,8 +70,17 @@ $darkgrey: #333d4b;
     flex-direction: column;
     max-height: 1100px;
     gap: 1.2em;
+    @media only screen and (max-width: 768px) {
+      border: 1px solid white;
+      display: inline-block;
+    }
+
     li {
       list-style: none;
+      @media only screen and (max-width: 768px) {
+        margin-bottom: 1em;
+      }
+
       // margin: 0 0 1.5em 0;
     }
   }
