@@ -1,3 +1,5 @@
+@import "./Menu3Responsive";
+
 $container: 1100px;
 $bgcolor: #191f28;
 $blue: rgb(43, 155, 235);
@@ -7,88 +9,89 @@ $brown: rgb(86, 85, 87);
 $darkgrey: #333d4b;
 
 .menu_3_container {
+  @include Menu3Responsive();
   width: $container;
   margin: auto;
   padding: 58px 50px 0 30px;
   display: flex;
-  .sidebar_menu_3 {
-    width: 370px;
-    padding: 60px 0 80px 0;
-    margin: 0 15px 0 0;
-    h1 {
-      font-size: 42px;
-      padding: 0 0 1rem 0;
+}
+.sidebar_menu_3 {
+  width: 370px;
+  padding: 60px 0 80px 0;
+  margin: 0 15px 0 0;
+  h1 {
+    font-size: 42px;
+    padding: 0 0 1rem 0;
+  }
+  > p {
+    font-size: 17px;
+    color: #d1d6db;
+    margin: 0 0 1.5rem 0;
+  }
+  .card_1 {
+    padding: 20px 23px 19px 35px;
+    background-color: rgb(51, 61, 75);
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 1rem 0;
+    p {
+      font-size: 19px;
+      font-weight: bold;
     }
-    > p {
-      font-size: 17px;
-      color: #d1d6db;
-      margin: 0 0 1.5rem 0;
+    img {
+      width: 52px;
     }
-    .card_1 {
-      padding: 20px 23px 19px 35px;
-      background-color: rgb(51, 61, 75);
-      border-radius: 12px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin: 0 0 1rem 0;
-      p {
-        font-size: 19px;
-        font-weight: bold;
+  }
+}
+.content_menu_3 {
+  width: 635px;
+  padding: 60px 30px 80px 60px;
+  .card_menu_3 {
+    padding: 32px 32px 26px 32px;
+    border-radius: 15px;
+    margin: 0 0 1.5rem 0;
+    position: relative;
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
       }
-      img {
-        width: 52px;
+      100% {
+        opacity: 1;
+        transform: none;
       }
     }
   }
-  .content_menu_3 {
-    width: 635px;
-    padding: 60px 30px 80px 60px;
-    .card_menu_3 {
-      padding: 32px 32px 26px 32px;
-      border-radius: 15px;
-      margin: 0 0 1.5rem 0;
-      position: relative;
-      animation-name: fadeInUp;
-      animation-duration: 1s;
-      animation-fill-mode: both;
-      @keyframes fadeInUp {
-        0% {
-          opacity: 0;
-          transform: translate3d(0, 100%, 0);
-        }
-        100% {
-          opacity: 1;
-          transform: none;
-        }
-      }
+}
 
-      .phone_position {
-        width: 15rem;
-        position: absolute;
-        top: 0.7rem;
-        right: 0;
-        z-index: 0;
-      }
-      .card_menu_3_text {
-        height: 245px;
+.phone_position {
+  width: 15rem;
+  position: absolute;
+  top: 0.7rem;
+  right: 0;
+  z-index: 0;
+}
+.card_menu_3_text {
+  height: 245px;
 
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        button {
-          background: rgba(25, 31, 40, 0.4);
-          border-radius: 8px;
-          border: none;
-          padding: 10px 8px;
-          font-size: 14px;
-          font-weight: bold;
-          color: white;
-        }
-        h3 {
-          font-size: 26px;
-        }
-      }
-    }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  button {
+    background: rgba(25, 31, 40, 0.4);
+    border-radius: 8px;
+    border: none;
+    padding: 10px 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+  }
+  h3 {
+    font-size: 26px;
   }
 }

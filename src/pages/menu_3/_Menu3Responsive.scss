@@ -1,0 +1,33 @@
+@mixin Menu3Responsive {
+  @media screen and (max-width: 960px) {
+    width: 768px;
+    padding: 2em 0 0 30px;
+    .sidebar_menu_3 {
+      width: 40%;
+    }
+    .content_menu_3 {
+      width: 60%;
+      padding: 60px 0 80px 30px;
+    }
+    .phone_position {
+      //   width: 8em;
+      z-index: -1;
+    }
+  }
+  @media screen and (max-width: 640px) {
+    display: block;
+    width: 580px;
+    padding: 0;
+    .sidebar_menu_3 {
+      width: 100%;
+      padding: 60px 0 0 0;
+      margin: 2em 0;
+      //   margin: 1em 0;
+      //   margin: 0;
+    }
+    .content_menu_3 {
+      width: 100%;
+      padding-left: 0;
+    }
+  }
+}
