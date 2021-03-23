@@ -1,0 +1,32 @@
+@mixin Menu2ForIpad {
+  @media screen and (max-width: 768px) {
+    width: 767px;
+    padding: 58px 40px 0 60px;
+    .sidebar_menu_2 {
+      //   padding: 0;
+      width: 280px;
+    }
+    .content_menu_2 {
+      width: 373px;
+      padding: 60px 0 80px 60px;
+      border: solid 1px white;
+    }
+    .card_comment {
+      display: block;
+      p {
+        padding: 0;
+      }
+      > :nth-child(2) {
+        display: flex;
+        justify-content: flex-end;
+        button {
+          // float: right;
+        }
+      }
+      //   margin: 0;
+      //   padding: 0;
+      //   width: 22em;
+      //   display: none;
+    }
+  }
+}
