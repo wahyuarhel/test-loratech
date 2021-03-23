@@ -1,5 +1,5 @@
 @mixin Menu2ForIpad {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 960px) {
     width: 767px;
     padding: 58px 40px 0 60px;
     .sidebar_menu_2 {
@@ -18,14 +18,26 @@
       > :nth-child(2) {
         display: flex;
         justify-content: flex-end;
-        button {
-          // float: right;
-        }
       }
-      //   margin: 0;
-      //   padding: 0;
-      //   width: 22em;
-      //   display: none;
+    }
+  }
+  @media screen and (max-width: 640px) {
+    width: 640px;
+    padding: 2em;
+    display: block;
+    .sidebar_menu_2 {
+      padding: 60px 0 0 0;
+      margin: 0;
+      width: 100%;
+      button {
+        margin: 2em 0 0 0;
+      }
+    }
+    .content_menu_2 {
+      margin: 0;
+      width: 100%;
+      padding: 0;
+      padding: 2em 0 0 0;
     }
   }
 }
