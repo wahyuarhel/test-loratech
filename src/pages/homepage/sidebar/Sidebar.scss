@@ -12,11 +12,14 @@
   padding: 16px 20px;
   background-color: white;
   border-radius: 8px;
-  input {
+  textarea {
     width: 100%;
-    border: none;
     font-size: 17px;
-    margin: 0 0 3rem 0;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    resize: none;
+    margin: 0 0 2rem 0;
     &::placeholder {
       color: rgb(191, 191, 191);
     }

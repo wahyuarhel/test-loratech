@@ -6,7 +6,8 @@ export default function Sidebar() {
         <div className="sidebar_container">
             <h1>금융이 불편할 때, 언제였나요?</h1>
             <div className="input_comment">
-                <input type="textarea" placeholder="이럴 때 너무 불편해요" />
+                {/* <input type="textarea" placeholder="이럴 때 너무 불편해요" /> */}
+                <textarea placeholder="이럴 때 너무 불편해요" wrap='on' />
                 <div><button>남기기</button></div>
             </div>
             <div className="top_20">
