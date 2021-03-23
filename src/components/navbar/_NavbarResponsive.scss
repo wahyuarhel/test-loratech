@@ -1,0 +1,22 @@
+@mixin NavbarResponsive {
+  @media screen and (max-width: 960px) {
+    .navbar_container {
+      border: solid 1px white;
+      width: 768px;
+      ul {
+        li {
+          //   float: left;
+          //   display: block;
+          a {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 640px) {
+    .navbar_container {
+      width: 640px;
+    }
+  }
+}
