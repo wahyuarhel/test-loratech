@@ -1,6 +1,6 @@
 import Navbar from './components/navbar/Navbar'
 import Login from './pages/login'
-import Main from './pages/homepage/Main'
+import Main from './pages/homepage/'
 import Menu_2 from './pages/menu_2'
 import Menu_3 from './pages/menu_3'
 import Menu_4 from './pages/menu_4'
