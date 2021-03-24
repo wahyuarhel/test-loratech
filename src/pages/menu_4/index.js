@@ -5,14 +5,14 @@ export default function Menu_4() {
     return (
         <div className="menu_4_container">
             <div className='sidebar_menu_4'>
-                <h1>
-                    146일 동안
-                    <br />
+                <div>
+                    <h1>                    146일 동안
+</h1>
                     <h1 style={{ padding: '0' }} className='rubberBand '>
                         7,765개의 불편함이
                     </h1>
-                    모였습니다
-                </h1>
+                    <h1>모였습니다</h1>
+                </div>
                 <p style={{ fontSize: "20px", fontWeight: 'bold' }}>
                     금융이 불편한 순간, 토스는 왜 듣나요?
                 </p>
