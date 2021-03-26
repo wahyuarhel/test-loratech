@@ -7,17 +7,27 @@ import Menu_4 from './pages/menu_4'
 import Footer from './components/footer/Footer'
 import { Route } from 'react-router-dom'
 import { useSelector } from 'react-redux'
-// import * as ActionLogin from './redux/LoginAction'
+import { useHistory } from 'react-router-dom'
+import React, { useEffect } from 'react'
+
 
 
 function App() {
 
-  const isAuth = useSelector((state) => state.LoginReducer.login)
-  console.log('isAuth', isAuth)
+  const isAuth = useSelector((state) => state.LoginReducer.token)
+  const login = useSelector((state) => state.LoginReducer.login)
+
+  const history = useHistory()
+  useEffect(() => {
+    history.push('/')
+  }, [login, history])
+
+
+
   return (
     <div>
       <Navbar />
-      {isAuth !== null ?
+      {isAuth !== null || login !== null ?
         <>
           <Route path='/menu_4' component={Menu_4} />
           <Route path='/menu_3' component={Menu_3} />

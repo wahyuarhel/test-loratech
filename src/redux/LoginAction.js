@@ -16,7 +16,7 @@ const postLogin = (body) => async (dispatch) => {
                 alert("Login success")
             }
         })
-        .catch((err) => alert("check email & password"))
+        .catch(() => alert("check email & password"))
 }
 
 export {

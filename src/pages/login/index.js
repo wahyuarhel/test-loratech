@@ -3,7 +3,6 @@ import { useHistory } from 'react-router-dom'
 import './index.scss'
 import * as ActionLogin from '../../redux/LoginAction'
 import { useSelector, useDispatch } from 'react-redux'
-// import { set } from 'js-cookie'
 
 const Login = () => {
 
@@ -34,7 +33,7 @@ const Login = () => {
     const history = useHistory()
     useEffect(() => {
         history.push('/')
-    }, [login])
+    }, [login, history])
 
 
     return (
