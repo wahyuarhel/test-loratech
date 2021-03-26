@@ -11,6 +11,7 @@ export default function Main() {
             tag[i].addEventListener('keyup', autoExpand)
         }
         function autoExpand(e, el) {
+            // eslint-disable-next-line
             var el = el || e.target
             el.style.height = 'inherit'
             el.style.height = el.scrollHeight + 'px'
