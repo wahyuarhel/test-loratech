@@ -20,13 +20,15 @@
       border-right: solid 1px whitesmoke;
     }
     .login_side_right {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
       padding: 0.5em 3em;
       input {
-        // height: 3em;
-        // padding: 0.7em;
+        height: 3em;
+        padding: 0.7em;
         height: 3em;
         width: 20em;
         padding: 0 1em;
@@ -34,7 +36,7 @@
         border: none;
         border-radius: 12px;
         border-bottom: solid 0.5px whitesmoke;
-        color: white;
+        // color: white;
         font-size: "Open Sans";
         &::placeholder {
           color: rgb(208, 204, 204);
