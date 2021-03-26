@@ -2,12 +2,36 @@ import React from 'react'
 import './index.scss'
 
 export default function Main() {
+
+    var comfyText = (function () {
+        var tag = document.querySelectorAll('textarea')
+        for (var i = 0; i < tag.length; i++) {
+            tag[i].addEventListener('paste', autoExpand)
+            tag[i].addEventListener('input', autoExpand)
+            tag[i].addEventListener('keyup', autoExpand)
+        }
+        function autoExpand(e, el) {
+            var el = el || e.target
+            el.style.height = 'inherit'
+            el.style.height = el.scrollHeight + 'px'
+        }
+        window.addEventListener('load', expandAll)
+        window.addEventListener('resize', expandAll)
+        function expandAll(e) {
+            var tag = document.querySelectorAll('textarea')
+            for (var i = 0; i < tag.length; i++) {
+                autoExpand(e, tag[i])
+            }
+        }
+    })()
+
+    console.log(comfyText)
+
     return (
         <div className="main_container">
             <div className="sidebar_container">
                 <h1>금융이 불편할 때, 언제였나요?</h1>
                 <div className="input_comment">
-                    {/* <input type="textarea" placeholder="이럴 때 너무 불편해요" /> */}
                     <textarea placeholder="이럴 때 너무 불편해요" wrap='on' />
                     <div><button>남기기</button></div>
                 </div>

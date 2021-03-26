@@ -31,12 +31,13 @@ $darkgrey: #333d4b;
   border-radius: 8px;
   textarea {
     width: 100%;
+    min-height: 4em;
     font-size: 17px;
+    font-family: "Open Sans";
     border: none;
     outline: none;
     overflow: hidden;
     resize: none;
-    margin: 0 0 2rem 0;
     &::placeholder {
       color: rgb(191, 191, 191);
     }
