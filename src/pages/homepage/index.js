@@ -3,6 +3,7 @@ import './index.scss'
 
 export default function Main() {
 
+    // eslint-disable-next-line
     var comfyText = (function () {
         var tag = document.querySelectorAll('textarea')
         for (var i = 0; i < tag.length; i++) {
@@ -26,7 +27,7 @@ export default function Main() {
         }
     })()
 
-    console.log(comfyText)
+    // console.log(comfyText)
 
     return (
         <div className="main_container">

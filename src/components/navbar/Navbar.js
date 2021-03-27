@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '@fortawesome/fontawesome-free'
 import { AiOutlineMenu } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
 import './Navbar.scss'
 import { useState } from 'react'
+import { useHistory } from 'react-router-dom'
+import { useSelector } from 'react-redux'
+
 
 export default function Navbar() {
 
@@ -19,6 +22,21 @@ export default function Navbar() {
             top: 0
         })
     }
+
+    const isAuth = useSelector((state) => state.LoginReducer.token)
+    const login = useSelector((state) => state.LoginReducer.login)
+
+    const logout = async () => {
+        await
+            localStorage.removeItem('token')
+        window.location = '/'
+        alert('Thank you for using this website')
+    }
+
+    const history = useHistory()
+    useEffect(() => {
+        history.push('/')
+    }, [login, history])
 
     const [menuOpen, setMenuOpen] = useState(false)
     const handleMenu = () => {
@@ -54,6 +72,14 @@ export default function Navbar() {
                             캠페인 자세히 보기
                     </Link>
                     </li>
+                    {isAuth !== null || login !== null ?
+
+                        <li>
+                            <Link to='/' onClick={logout}>
+                                LOGOUT
+                    </Link>
+                        </li> : null
+                    }
                 </ul>
                 <div onClick={handleMenu} className='menu_bar'><AiOutlineMenu /></div>
 

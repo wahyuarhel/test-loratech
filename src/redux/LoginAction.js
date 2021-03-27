@@ -19,6 +19,15 @@ const postLogin = (body) => async (dispatch) => {
         .catch(() => alert("check email & password"))
 }
 
+const logout = () => async (dispatch) => {
+    await localStorage.removeItem('token');
+    dispatch({
+        type: 'LOG_OUT'
+    })
+    alert('Thank you for using this website')
+}
+
 export {
-    postLogin
+    postLogin,
+    logout
 }
